@@ -22,7 +22,7 @@ st.title("🎟️ Raffle Ticket Tracker")
 col1, col2 = st.columns([2, 1])
 
 with col1:
-    st.header("Add / Update Ticket")
+    st.header("Add Ticket")
 
     with st.form("ticket_form", clear_on_submit=True):
         ticket_number = st.number_input("Ticket number", min_value=1, step=1)
@@ -174,5 +174,6 @@ if tickets:
 
 else:
     st.info("No tickets found. Add one using the form above.")
+
 
 
